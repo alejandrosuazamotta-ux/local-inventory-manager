@@ -1,0 +1,45 @@
+.main-content, .content-area, body {
+    background-color: #f8f9fa !important;
+}
+.topbar {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #e5e7eb !important;
+}
+.topbar h5 {
+    color: #1f2937 !important;
+}
+.search-box input {
+    background: #f3f4f6 !important;
+    color: #1f2937 !important;
+    border: 1px solid #e5e7eb !important;
+}
+.search-box svg {
+    color: #6b7280 !important;
+}
+.card {
+    background-color: #ffffff !important;
+    border: 1px solid #e5e7eb !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+}
+.card-header {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #e5e7eb !important;
+}
+.table th {
+    background-color: #f9fafb !important;
+    border-bottom: 1px solid #e5e7eb !important;
+    color: #6b7280 !important;
+}
+.table td {
+    border-bottom: 1px solid #f3f4f6 !important;
+}
+.card-footer {
+    background-color: #ffffff !important;
+    border-top: 1px solid #e5e7eb !important;
+}
+.table-row-hover:hover {
+    background-color: #f9fafb !important;
+}
+
+.card-footer nav .pagination { margin-bottom: 0; }
+.card-footer nav .pagination .page-link { padding: 0.375rem 0.75rem; font-size: 0.85rem; }

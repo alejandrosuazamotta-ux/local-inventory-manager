@@ -1,0 +1,181 @@
+body {
+    background-color: #f8fafc;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.login-wrapper {
+    min-height: 100vh;
+    display: flex;
+}
+
+.login-side-image {
+    flex: 1;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.85) 0%, rgba(2, 6, 23, 0.95) 100%), url('/images/estanterias-lujo.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-side-image::after {
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+    top: -25%;
+    left: -25%;
+}
+
+.login-side-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+
+.login-form-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 2rem;
+}
+
+.login-form-wrapper {
+    width: 100%;
+    max-width: 420px;
+}
+
+.login-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 0.5rem;
+}
+
+.login-subtitle {
+    color: #6b7280;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.input-icon-wrapper {
+    position: relative;
+}
+
+.input-icon-wrapper i, .input-icon-wrapper svg {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #d4af37; /* Oro pulido */
+    width: 20px;
+    height: 20px;
+}
+
+.form-control-custom {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 3rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: #1e293b;
+    transition: all 0.2s;
+    background-color: #ffffff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+}
+
+.form-control-custom:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 50px #ffffff inset !important;
+    -webkit-text-fill-color: #1e293b !important;
+}
+
+.form-control-custom:focus:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 50px #ffffff inset !important;
+}
+
+.form-control-custom:focus {
+    outline: none;
+    border-color: #d4af37;
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+    background-color: #ffffff;
+}
+
+.login-btn {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.85rem;
+    background-color: #0f172a; /* Azul zafiro oscuro */
+    color: #d4af37; /* Dorado */
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.2), 0 2px 4px -1px rgba(15, 23, 42, 0.1);
+}
+
+.login-btn:hover {
+    background-color: #1e293b;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 8px -1px rgba(15, 23, 42, 0.25), 0 4px 6px -1px rgba(15, 23, 42, 0.15);
+    color: #fcd34d;
+}
+
+.options-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #4b5563;
+}
+
+.forgot-password {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .login-side-image {
+        display: none;
+    }
+}

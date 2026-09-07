@@ -1,0 +1,16 @@
+{
+  "name": "Inventario Limpiaplus 360",
+  "short_name": "Limpiaplus 360",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/img/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
