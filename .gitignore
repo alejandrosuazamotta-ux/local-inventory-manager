@@ -22,3 +22,6 @@ yarn-error.log
 /.vscode
 /.zed
 /.claude
+
+# Archivos ejecutables e instaladores
+*.exe
